@@ -1,0 +1,48 @@
+<html lang="ru"><head>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">        
+  <title>Task</title>
+  <meta name="description" content="Task">
+  <meta property="og:type" content="Task">
+  <meta property="og:title" ccontent="Task">
+  <meta property="og:description" content="Task">        
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">    
+    <div class="controls">      
+      <div class="actions">
+        <button id="addBtn">add event</button>        
+        <button id="curDateBtn">current day</button>        
+      </div>
+      <div class="search">
+        <input id="search" type="text" title="Search event, date" autocomplete="off" placeholder="Search event name">
+        <button id="searchBtn">search</button>
+        
+      </div>
+    </div>
+    <div class="add-form-wrap">
+      <div class="container">
+        <form class="add-form">          
+          <input class="all-event" autocomplete="off" placeholder="Jan 25 2020 14:23, Event, Description">                        
+          <div class="actions">
+            <button class="btn-form-add">add</button>
+            <button class="btn-form-close">close</button>
+          </div>              
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</header>
+<section class="content">
+  <div class="container">
+    <div class="calendar" id="calendarId"></div>    
+  </div>
+</section>
+
+<script src="app.js"></script>
+
+</body></html>
