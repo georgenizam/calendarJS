@@ -272,7 +272,7 @@ let model = {
       }
     ];
     
-    if (localStorage.length === 0) {
+    if (!localStorage.events) {
       localStorage.events = JSON.stringify(eventsTmp) || '[]';
       this.events = eventsTmp;
       return;
